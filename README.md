@@ -1,9 +1,24 @@
-Here are some screenshots of the functioning of the website.
+Here are some screenshots of the website.
+
+## [1] Face recognition 🙂
+![image](https://github.com/hd-buddy/face_detection_web/assets/117499276/98d85673-c6cb-4c93-8711-d69aa1156e20)
+## [2] Sign-In Form
+![image](https://github.com/hd-buddy/face_detection_web/assets/117499276/04abc8a5-ff4b-4f23-8ad2-3480c67bf3f5)
+## [3] Registration Form
+![image](https://github.com/hd-buddy/face_detection_web/assets/117499276/812fe038-a600-4434-873a-4459e5995bc8)
 
 
+Also uploading facercognise-api file which you can download directly from here.
+# READ THIS TOO 
+👉Neccesary changes/installations to do
+ 1) Install __postgresql__ and create database as __'smart-brain'__ 
+ 2) In that create two table users and login (sql queries given below)\
+   `create table users(id serial primary key,name varchar(100),email text unique not null, entries bigint default 0,joined date);`\
+   `create table login(id serial primary key,email text unique not null,hash varchar(100) not null);`
+ 3) Update your password in the 'server.js' file. (Line:__12__)\
 
-
-
+**IMP** \
+run api on localhost:3000 and web on localhost:3001
 
 
 
@@ -28,9 +43,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run:      
 
-### `npm start`
+### `npm start`  
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.

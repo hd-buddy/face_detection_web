@@ -8,7 +8,9 @@ Here are some screenshots of the website.
 ![image](https://github.com/hd-buddy/face_detection_web/assets/117499276/812fe038-a600-4434-873a-4459e5995bc8)
 
 
-Also uploading facercognise-api file which you can download directly from here.
+Also uploading facercognise-api file which you can download directly from here.\
+[API file Github Link](https://github.com/hd-buddy/face_detection_web/tree/master/facerecognise-api)
+
 # READ THIS TOO 
 👉Neccesary changes/installations to do
  1) Install __postgresql__ and create database as __'smart-brain'__ 

@@ -1,12 +1,54 @@
+Here are some screenshots of the website.
+
+## [1] Face recognition 🙂
+![image](https://github.com/hd-buddy/face_detection_web/assets/117499276/98d85673-c6cb-4c93-8711-d69aa1156e20)
+## [2] Sign-In Form
+![image](https://github.com/hd-buddy/face_detection_web/assets/117499276/04abc8a5-ff4b-4f23-8ad2-3480c67bf3f5)
+## [3] Registration Form
+![image](https://github.com/hd-buddy/face_detection_web/assets/117499276/812fe038-a600-4434-873a-4459e5995bc8)
+
+
+Also uploading facercognise-api file which you can download directly from here.\
+[API file Github Link](https://github.com/hd-buddy/face_detection_web/tree/master/facerecognise-api)
+
+# READ THIS TOO 
+👉Neccesary changes/installations to do
+ 1) Install __postgresql__ and create database as __'smart-brain'__ 
+ 2) In that create two table users and login (sql queries given below)\
+   `create table users(id serial primary key,name varchar(100),email text unique not null, entries bigint default 0,joined date);`\
+   `create table login(id serial primary key,email text unique not null,hash varchar(100) not null);`
+ 3) Update your password in the 'server.js' file. (Line:__12__)
+ 4) For more help: Read the details given below on react.
+
+# IMP 
+- [x] run api on localhost:3000 and web on localhost:3001
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run:      
 
-### `npm start`
+### `npm start`  
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -39,32 +81,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
